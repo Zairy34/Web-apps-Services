@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>How to Make a Popup</title>
+  <link rel="stylesheet" href="{% static 'css/addcart.css' %}">
+  <script defer src="app.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="popup" id="popup">
+    <img src="{% static "img/tick.png" %}" alt="">
+    <h2>Done</h2>
+    <p> One platform where you can hire the right person for your work</p>
+    <button type="button"><a href= "/Playground/hello/">OK</a></button>
+  </div>  
+
+</div>
+ <script>
+
+    let popup = document.getElementById('popup')
+
+function openPopup(){
+  popup.classList.add('open-popup')
+}
+
+function closePopup(){
+  popup.classList.remove('open-popup')
+}
+ </script>
+</body>
+</html>
