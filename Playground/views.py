@@ -21,7 +21,7 @@ def product_list(request):
 
 
 def Services(request):
-    all_services = ALLServices.objects.all()
+    all_services = ALLServices.objects.all()  
     our_technicians = OUR_TECHNICIANS.objects.all()
     clients_reviews = Clients_reviews.objects.all()
     if request.method == 'POST':
